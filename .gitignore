@@ -1,0 +1,11 @@
+# Dependencies
+node_modules
+
+# Linting
+.eslintcache
+
+# Changelog / Release Notes
+CHANGELOG.md
+
+# Local dev environments
+.vscode
