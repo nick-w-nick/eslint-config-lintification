@@ -1,0 +1,24 @@
+{
+    "name": "eslint-config-lintification",
+    "version": "1.0.0",
+    "description": "",
+    "main": ".eslint.rc.js",
+    "files": [
+        ".eslint.rc.js"
+    ],
+    "scripts": {
+        "lint": "eslint --cache --ext js --ext ts ./",
+        "lint:fix": "eslint --cache --fix --ext js --ext ts ./",
+        "test": "",
+        "prepublishOnly": "npm run test && npm run lint",
+        "preversion": "npm run lint"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nick-w-nick/eslint-config-lintification.git"
+    },
+    "homepage": "https://github.com/nick-w-nick/eslint-config-lintification#readme",
+    "keywords": [],
+    "author": "",
+    "license": "MIT"
+}
