@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
 
 jobs:
+  # Before being ran, this workflow assumes that the package version in package.json has been manually bumped to a new version with `npm install` being run to update package-lock.json as well.
+  # The publication of the package will fail if the version in package.json is not updated.
   publish-npm-package-to-npm:
     runs-on: ubuntu-latest
     permissions:
