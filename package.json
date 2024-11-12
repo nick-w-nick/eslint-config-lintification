@@ -19,6 +19,6 @@
     },
     "homepage": "https://github.com/nick-w-nick/eslint-config-lintification#readme",
     "keywords": ["eslint", "lintification", "lint", "typescript", "nodejs", "backend"],
-    "author": "",
+    "author": "https://github.com/nick-w-nick",
     "license": "MIT"
 }
