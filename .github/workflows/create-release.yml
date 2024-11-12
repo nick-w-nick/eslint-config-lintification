@@ -8,7 +8,7 @@ on:
 
 jobs:
   create-release:
-    # only run if the "Publish NPM Package" workflow was successful
+    # Only run if the "Publish NPM Package" workflow was successful
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
