@@ -104,7 +104,7 @@ module.exports = {
         'newline-destructuring/newline': 'error',   // Deconstruct object properties on separate lines if objects have more than 3 or more properties
         'simple-import-sort/imports': 'error',      // Enforce sorting of imports
         'simple-import-sort/exports': 'error',      // Enforce sorting of exports
-        'import/extensions': ['error', {        // Require extensions for imports...
+        'import/extensions': ['error', 'ignorePackages', { // Require extensions for imports...
             ts: 'never',                        // ... except for .ts files since this plugin doesn't allow .js imports in .ts files which is needed for our TS config, but the compiler will catch any import issues anyways
             js: 'always',                       // ... in .js files for ESM compatibility
         }],
