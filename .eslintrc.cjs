@@ -132,6 +132,7 @@ module.exports = {
                 'airbnb-typescript/base',
                 'plugin:@stylistic/recommended-extends',
                 'plugin:@stylistic/disable-legacy',
+                'plugin:@typescript-eslint/recommended-requiring-type-checking',
             ],
             parser: '@typescript-eslint/parser',
             parserOptions: {
@@ -195,6 +196,11 @@ module.exports = {
                     format: ['camelCase', 'PascalCase', 'UPPER_CASE'], // Use existing naming convention formatting
                     leadingUnderscore: 'require',                      // Require a leading underscore, as otherwise unused vars fail standard the naming convention
                 }],
+                '@typescript-eslint/no-misused-promises': ['error',     // Overwrite from plugin:@typescript-eslint/recommended-requiring-type-checking
+                    {
+                        checksVoidReturn: false, // Allows async functions in void-returning places
+                    },
+                ],
                 '@typescript-eslint/no-unused-vars': ['error', {    // Disallow unused variables
                     args: 'all',                                    // All function parameters/arguments must be used
                     varsIgnorePattern: '^_',                        // Variables declared with names that start with an underscore can be unused
