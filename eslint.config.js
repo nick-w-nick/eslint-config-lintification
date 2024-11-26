@@ -239,6 +239,9 @@ module.exports = {
                 'plugin:jest/recommended',
             ],
             parser: '@typescript-eslint/parser',
+            rules: {
+                '@typescript-eslint/dot-notation': 'off', // Allow for object['property'] notation for testing of protected/private classes
+            },
         },
     ],
 };
