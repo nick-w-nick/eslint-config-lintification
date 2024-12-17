@@ -141,6 +141,7 @@ module.exports = {
             parserOptions: {
                 project: [
                     path.resolve(path.resolve(), 'tsconfig.json'),          // Required for: @typescript-eslint/recommended-requiring-type-checking
+                    path.resolve(path.resolve(), 'test/tsconfig.json'),    // Required for the below jest overrides to take effect for typescript files
                     path.resolve(path.resolve(), 'tests/tsconfig.json'),    // Required for the below jest overrides to take effect for typescript files
                 ],
             },
