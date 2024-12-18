@@ -20,6 +20,7 @@
     "homepage": "https://github.com/nick-w-nick/eslint-config-lintification#readme",
     "keywords": [
         "eslint",
+        "eslint-config",
         "lintification",
         "lint",
         "typescript",
