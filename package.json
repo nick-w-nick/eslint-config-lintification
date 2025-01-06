@@ -1,10 +1,10 @@
 {
     "name": "eslint-config-lintification",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A suite of battle-tested linting rules for any modern Node.js application, with full support for the most common TypeScript rules.",
-    "main": "eslint.config.js",
+    "main": ".eslintrc.cjs",
     "files": [
-        "eslint.config.js"
+        ".eslintrc.cjs"
     ],
     "scripts": {
         "lint": "eslint --cache --ext cjs --ext js --ext ts ./",
