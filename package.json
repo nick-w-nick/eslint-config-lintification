@@ -7,8 +7,8 @@
         "eslint.config.js"
     ],
     "scripts": {
-        "lint": "eslint --cache --ext js --ext ts ./",
-        "lint:fix": "eslint --cache --fix --ext js --ext ts ./",
+        "lint": "eslint --cache --ext cjs --ext js --ext ts ./",
+        "lint:fix": "eslint --cache --fix --ext cjs --ext js --ext ts ./",
         "test": "",
         "prepublishOnly": "npm run test && npm run lint",
         "preversion": "npm run lint"
