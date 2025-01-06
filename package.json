@@ -2,9 +2,9 @@
     "name": "eslint-config-lintification",
     "version": "1.0.0",
     "description": "A suite of battle-tested linting rules for any modern Node.js application, with full support for the most common TypeScript rules.",
-    "main": ".eslint.rc.js",
+    "main": "eslint.config.js",
     "files": [
-        ".eslint.rc.js"
+        "eslint.config.js"
     ],
     "scripts": {
         "lint": "eslint --cache --ext js --ext ts ./",
@@ -18,7 +18,38 @@
         "url": "git+https://github.com/nick-w-nick/eslint-config-lintification.git"
     },
     "homepage": "https://github.com/nick-w-nick/eslint-config-lintification#readme",
-    "keywords": ["eslint", "lintification", "lint", "typescript", "nodejs", "backend"],
+    "keywords": [
+        "eslint",
+        "eslint-config",
+        "lintification",
+        "lint",
+        "typescript",
+        "nodejs",
+        "backend"
+    ],
     "author": "https://github.com/nick-w-nick",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "eslint": ">= 8.56.0",
+        "@stylistic/eslint-plugin": "2.10.1",
+        "@typescript-eslint/eslint-plugin": "6.7.4",
+        "@typescript-eslint/parser": "6.7.4",
+        "eslint-config-airbnb": "19.0.4",
+        "eslint-config-airbnb-base": "15.0.0",
+        "eslint-config-airbnb-typescript": "17.1.0",
+        "eslint-import-resolver-typescript": "3.6.1",
+        "eslint-plugin-file-progress": "1.3.0",
+        "eslint-plugin-import": "2.28.1",
+        "eslint-plugin-import-newlines": "1.3.4",
+        "eslint-plugin-jest": "27.4.2",
+        "eslint-plugin-newline-destructuring": "1.2.2",
+        "eslint-plugin-simple-import-sort": "10.0.0",
+        "typescript-eslint": "8.7.0"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    },
+    "peerDependencies": {
+        "eslint": ">= 8.56.0"
+    }
 }
