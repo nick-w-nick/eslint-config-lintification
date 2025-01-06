@@ -23,7 +23,7 @@ jobs:
       uses: martinbeentjes/npm-get-version-action@main
     - name: Create Changelog Config
       # For more info on the auto-changelog config params: https://www.npmjs.com/package/auto-changelog/v/2.4.0
-      run: echo '{"output":"CHANGELOG.md","template":"keepachangelog","package":true,"unreleased":false,"commitLimit":false,"sortCommits":"date-desc","issueUrl":"https://github.com/nick-w-nick/eslint-config-lintification/issues/{id}","issuePattern":"\\b(\\d+)\\b}' > .auto-changelog
+      run: echo '{"output":"CHANGELOG.md","template":"keepachangelog","package":true,"unreleased":false,"commitLimit":false,"sortCommits":"date-desc","issueUrl":"https://github.com/nick-w-nick/eslint-config-lintification/issues/{id}","issuePattern":"\\b(\\d+)\\b}"}' > .auto-changelog
     - name: Generate Changelog
       run: npx auto-changelog@2.4.0
     - name: Create Release
